@@ -7,6 +7,46 @@
   <title>Leaderboard App</title>
 </head>
 <body>
-  
+  <header>
+    <h1 id="title">Leaderboard</h1>
+  </header>
+  <main>
+    <section id="scoreboard">
+      <div id="scoreList">
+        <div id="listHeader">
+          <h3>Recent scores</h3>
+          <button>Refresh</button>
+        </div>
+        <div class="scoreItem">
+          <h2 class="scorer">C. Ronaldo</h2>
+          <p class="score">89</p>
+        </div>
+        <div class="scoreItem">
+          <h2 class="scorer">Mbappe</h2>
+          <p class="score">92</p>
+        </div>
+        <div class="scoreItem">
+          <h2 class="scorer">Messi</h2>
+          <p class="score">96</p>
+        </div>
+        <div class="scoreItem">
+          <h2 class="scorer">L.Diaz</h2>
+          <p class="score">75</p>
+        </div>
+        <div class="scoreItem">
+          <h2 class="scorer">M. Salah</h2>
+          <p class="score">88</p>
+        </div>
+      </div>
+      <div id="scoreForm">
+        <h3>Add your score</h3>
+        <form action="#" id="addScore">
+          <input type="text" placeholder="Your name" name="name" class="scoreField">
+          <input type="text" placeholder="Your score" name="score" class="scoreField">
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
