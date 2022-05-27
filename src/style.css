@@ -4,8 +4,16 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
+body {
+  background: rgb(15, 6, 40);
+}
+
 header {
   margin: 5% 10% 1% 10%;
+  font-weight: 900;
+  padding: 1rem;
+  background: aqua;
+  color: purple;
 }
 
 #scoreboard {
@@ -18,9 +26,7 @@ header {
 
 #scoreList {
   padding: 0 1rem;
-  padding-top: 0.25rem;
-  width: 50%;
-  border: 2px solid black;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -31,15 +37,16 @@ header {
   flex-direction: row;
   justify-content: space-between;
   font-size: 1.5rem;
+  color: aqua;
+  margin-bottom: 1rem;
 }
 
 .scoreItem {
   display: flex;
   justify-content: space-between;
-}
-
-.scoreItem:nth-child(2n+1) {
-  background-color: #ddd;
+  background: purple;
+  color: aqua;
+  margin-top: 0.25rem;
 }
 
 .scorer,
@@ -47,12 +54,20 @@ header {
   position: relative;
   right: 0;
   font-size: 1.2rem;
-  margin: 0.5rem;
+  padding: 0.5rem;
   font-weight: normal;
+  font-weight: bolder;
 }
 
 .scorer {
-  max-width: 150px;
+  max-width: 100px;
+}
+
+.score {
+  background: aqua;
+  color: purple;
+  min-width: 50px;
+  text-align: end;
 }
 
 #scoreForm,
@@ -69,6 +84,10 @@ header {
   margin-top: 1rem;
 }
 
+#formHeader {
+  color: aqua;
+}
+
 button,
 input[type="submit"] {
   padding: 5px 10px;
@@ -78,8 +97,9 @@ input[type="submit"] {
   transition: 200ms;
   border: 3px solid;
   border-radius: 3px;
-  box-shadow: 4px 4px 0 1px black;
-  background-color: whitesmoke;
+  box-shadow: 4px 4px 0 1px aqua;
+  color: aqua;
+  background-color: purple;
 }
 
 button:hover,
@@ -90,7 +110,15 @@ input[type="submit"]:hover {
 .scoreField {
   width: 200px;
   padding: 0.5rem;
-  border: 3px solid;
+  border: 0;
   font-size: 18px;
   border-radius: 3px;
+  color: purple;
+  font-weight: bolder;
+}
+
+.scoreField::placeholder {
+  color: purple;
+  font-weight: lighter;
+  font-style: italic;
 }
